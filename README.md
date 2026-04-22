@@ -48,10 +48,22 @@ long long w0 = (long long)(v2.x - v1.x) * (y - v1.y) - (long long)(v2.y - v1.y) 
 * A C compiler (GCC/Clang)
 * **SDL2** library (used only for creating the window and pushing the final pixel buffer to the screen)
 
-### Building
+Here is the **Building** section in a single snippet, with the italicized "or" correctly formatted for GitHub:
+
+### 🛠️ Building the Project
+
+You will need the **SDL2** development libraries installed on your system.
+
 ```bash
-# Example build command using GCC
-gcc -o renderer main.c `sdl2-config --cflags --libs` -lm
+# Option 1: Using sdl2-config (Recommended for Linux/macOS)
+gcc -o renderer fixed3d.c `sdl2-config --cflags --libs` -lm
+```
+
+*or*
+
+```bash
+# Option 2: Manual linking with optimization (Great for performance)
+gcc fixed3d.c -lm -lSDL2 -O2 -o cube
 ```
 
 ### Controls
