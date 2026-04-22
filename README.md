@@ -3,7 +3,6 @@
 A "back-to-basics" 3D engine written in C that eschews modern GPUs and floating-point math in favor of retro-inspired fixed-point arithmetic and manual rasterization.
 
 
-
 ## 🚀 Overview
 
 This project is a educational deep-dive into how 3D graphics were handled in the 80s and 90s. Instead of relying on OpenGL, DirectX, or Vulkan, this renderer treats the screen as a raw linear array of memory (a framebuffer) and calculates every pixel manually using **Fixed-Point Integer Math**.
@@ -58,6 +57,11 @@ gcc -o renderer main.c `sdl2-config --cflags --libs` -lm
 ### Controls
 * **Close Window:** Exit the program.
 * The cube rotates automatically to demonstrate the real-time transformation and depth buffering.
+
+---
+
+## 📸 Screenshot
+![App Screenshot](sc_220426.png)
 
 ---
 
